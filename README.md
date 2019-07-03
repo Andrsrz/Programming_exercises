@@ -1,2 +1,2 @@
-# Programming_exercises
-List of programming exercises with their respective solution.
+# programming-exercises
+List of programming exercises with its respective solution.
