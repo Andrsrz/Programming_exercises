@@ -16,7 +16,7 @@
  *
  * We need to care about how do we know in code when a number is even.
  * With the module " % " operator, if the operation with an even number, in this case 2,
- * left a reminder then the number is not even.
+ * left a remainder then the number is not even.
 */
 
 // To avoid magic numbers
