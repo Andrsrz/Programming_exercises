@@ -15,6 +15,7 @@ using namespace std;
 // Avoid magic numbers. Range to get random numbers.
 const int RANGE_MIN = -100;
 const int RANGE_MAX = 100;
+const int ARRAY_MIN_LENGTH = 2;
 
 // Function declaration
 int getRandomNumber(int rangeMin, int rangeMax);
@@ -25,7 +26,11 @@ int main(){
 	int arraySize = 0;
 	cout << "What size the array should be? : ";
 	cin >> arraySize;
-	cout << adjacentElementsProduct(getRandomArray(arraySize)) << endl;
+	if(arraySize >= ARRAY_MIN_LENGTH){
+		cout << adjacentElementsProduct(getRandomArray(arraySize)) << endl;
+	}else{
+		cout << "Array size not valid." << endl;
+	}
 	return 0;
 }
 
