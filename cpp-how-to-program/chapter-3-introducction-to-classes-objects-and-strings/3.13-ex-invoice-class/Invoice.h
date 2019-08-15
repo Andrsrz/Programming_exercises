@@ -2,8 +2,6 @@
  * C++ How To Program - 3.13 : Exercise Invoice Class
 */
 
-#include <string>
-
 class Invoice{
 public:
 	Invoice(int, std::string, int, int);
@@ -15,7 +13,7 @@ public:
 	int getItemQuantity();
 	void setItemPrice(int);
 	int getItemPrice();
-	int getInvoiceAmount(int, std::string, int, int);
+	int getInvoiceAmount(int, int);
 private:
 	int itemId;
 	std::string itemDescription;
