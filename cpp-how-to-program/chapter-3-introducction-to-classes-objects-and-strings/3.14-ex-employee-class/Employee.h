@@ -4,7 +4,7 @@
 
 class Employee{
 public:
-	Employee(std::string, int, std::string);
+	Employee(std::string, std::string, int);
 	void setFirstName(std::string);
 	std::string getFirstName();
 	void setLastName(std::string);

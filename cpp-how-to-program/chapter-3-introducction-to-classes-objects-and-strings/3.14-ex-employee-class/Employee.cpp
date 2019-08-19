@@ -9,9 +9,9 @@
 Employee::Employee(std::string eFirstName, std::string eLastName, int eMonthlySalary){
 	setFirstName(eFirstName);
 	setLastName(eLastName);
-	if(eMonthlySalary < 0){
+	if(eMonthlySalary <= 0){
 		setMonthlySalary(0);
-	}else if(eMonthlySalary >= 0){
+	}else{
 		setMonthlySalary(eMonthlySalary);
 	}
 }
@@ -20,7 +20,7 @@ void Employee::setFirstName(std::string eFirstName){
 	firstName = eFirstName;
 }
 
-std::string Employee:getFirstName(){
+std::string Employee::getFirstName(){
 	return firstName;
 }
 
