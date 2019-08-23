@@ -25,7 +25,7 @@ HeartRate::HeartRate(std::string pFirstName, std::string pLastName, int pBirthMo
 // Setters and getters
 void HeartRate::setFirstName(std::string pFirstName){
 	// Check for no blank first name
-	if(pFirstName.lenght() >= 1){
+	if(pFirstName.length() >= 1){
 		firstName = pFirstName;
 	}else{
 		std::cout << "Failed to set first name" << std::endl;
@@ -40,7 +40,7 @@ std::string HeartRate::getFirstName(){
 
 void HeartRate::setLastName(std::string pLastName){
 	// Check for no blank last name
-	if(pLastName.lenght() >= 1){
+	if(pLastName.length() >= 1){
 		lastName = pLastName;
 	}else{
 		std::cout << "Failed to set last name" << std::endl;
@@ -93,11 +93,14 @@ int HeartRate::getAge(){
 	std::cout << "Enter the current day : ";
 	std::cin >> day;
 	std::cout << "Enter the current year : ";
-	std::cint >> year;
+	std::cin >> year;
 	std::cout << "Current date : " << month << "/" << day << "/" << year << std::endl;
 	
 	std::cout << "Your birthday : " << getBirthMonth() << "/" << getBirthDay() << "/" << getBirthYear() << std::endl;
 	age = ( year - getBirthYear() );
+	if( month < getBirthMonth() ){
+		age--;
+	}
 	std::cout << "Your age is : " << age << std::endl;
 
 	return age;
@@ -114,7 +117,7 @@ float HeartRate::getMaximumHeartRate(int pAge){
 float HeartRate::getTargetHeartRate(float pMaximumHeartRate){
 	float targetHeartRate;
 
-	targetHeartRate = ( ( ( pMaximumHeartRate * MAX_RANGE ) + ( pMaximumHeartRate * MIN_RANGE ) ) / TWO )
+	targetHeartRate = ( ( ( pMaximumHeartRate * MAX_RANGE ) + ( pMaximumHeartRate * MIN_RANGE ) ) / TWO );
 
 	return targetHeartRate;
 }
