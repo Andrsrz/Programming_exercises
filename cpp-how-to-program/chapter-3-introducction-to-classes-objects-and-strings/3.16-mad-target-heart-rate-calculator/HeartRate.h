@@ -16,7 +16,7 @@ public:
 	void setBirthYear(int);
 	int getBirthYear();
 	int getAge(); // Calculate the age
-	float getMaximumHeartRate(float); // Calculate maximum heart rate
+	float getMaximumHeartRate(int); // Calculate maximum heart rate
 	float getTargetHeartRate(float); // Calculate target heart rate
 private:
 	std::string firstName;
