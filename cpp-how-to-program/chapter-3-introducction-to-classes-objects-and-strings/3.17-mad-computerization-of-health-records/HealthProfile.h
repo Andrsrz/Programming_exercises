@@ -28,7 +28,7 @@ public:
 	float getMaximumHeartRate(int);
 	float getTargetHeartRate(float);
 	float getBodyMassIndex();
-privte:
+private:
 	// Attributes
 	std::string firstName;
 	std::string lastName;
