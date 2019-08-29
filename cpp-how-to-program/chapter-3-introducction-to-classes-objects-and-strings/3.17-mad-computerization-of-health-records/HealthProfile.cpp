@@ -12,22 +12,22 @@ const int MHR = 200;
 const float MIN_RANGE = 0.50;
 const float MAX_RANGE = 0.85;
 const int TWO = 2;
-const int SEVE_HUNDRED_AND_THREE = 703;
+const int SEVEN_HUNDRED_AND_THREE = 703;
 
 // Constructor
-HealthProfile::HealthProfile(std::string pFirstName, std::string pLastName, std::string pGender, int pBirthMonth, int pBirthDay, int pBirthYear, float pHeight, float pWeight){
+HealthProfile::HealthProfile(std::string pFirstName, std::string pLastName, std::string pGender, int pBirthMonth, int pBirthDay, int pBirthYear, float pWeight, float pHeight){
 	setFirstName(pFirstName);
 	setLastName(pLastName);
 	setGender(pGender);
 	setBirthMonth(pBirthMonth);
 	setBirthDay(pBirthDay);
 	setBirthYear(pBirthYear);
-	setHeight(pHeight);
 	setWeight(pWeight);
+	setHeight(pHeight);
 }
 
 // Setters and getters
-void HealthProfile::setName(std::string pFirstName){
+void HealthProfile::setFirstName(std::string pFirstName){
 	// Check for no blank first name
 	if(pFirstName.length() >= 1){
 		firstName = pFirstName;
@@ -100,7 +100,7 @@ void HealthProfile::setHeight(float pHeight){
 	height = pHeight;
 }
 
-float HealtProfile::getHeight(){
+float HealthProfile::getHeight(){
 	return height;
 }
 
