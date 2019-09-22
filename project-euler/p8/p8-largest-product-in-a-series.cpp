@@ -1,5 +1,5 @@
 /*
- * Project Euler
+ * Project Euler - Problem 8 : Largest Product in a Series
 */
 
 #include <iostream>
