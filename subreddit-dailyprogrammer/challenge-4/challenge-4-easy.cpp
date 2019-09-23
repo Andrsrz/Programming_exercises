@@ -1,10 +1,12 @@
 /*
- * r/dailyprogrammer - Challenge 4 : Random password generator
+ * r/dailyprogrammer - Challenge 4 Easy : Random password generator
  * Description in txt file
 */
 
 #include <iostream>
 #include <random>
+#include <vector>
+#include <string>
 
 // Avoid magic numbers
 const int MIN_RANGE = 33;
