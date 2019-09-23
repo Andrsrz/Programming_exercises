@@ -18,14 +18,13 @@ int main(){
 
 	while(menu){
 		std::string option = "";
-		std::cout << "Welcome to Terminal Calculator!\n"
-			<< "Enter any operation ( If you want to quit type : quit ) : "
-			<< std::endl;
+		std::cout << "\tWelcome to Terminal Calculator!\n"
+			<< "Enter any operation ( If you want to quit type : quit )"
+			<< "\n > ";
 		std::getline(std::cin, option);
 
 		if(option == "quit"){
 			menu = false;
-			break;
 		}else{
 			// Do operation
 		}
