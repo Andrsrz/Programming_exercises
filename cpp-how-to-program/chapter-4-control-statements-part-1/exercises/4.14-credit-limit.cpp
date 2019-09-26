@@ -88,5 +88,25 @@ private:
 };
 
 int main(){
+	bool b = true;
+
+	while(b){
+		int a, b, c, d, e;
+		std::cout << "Enter account number : ";
+		std::cin >> a;
+		std::cout << "Enter balance at the beginning of the month : ";
+		std::cin >> b;
+		std::cout << "Enter total of charges of the month : ";
+		std::cin >> c;
+		std::cout << "Enter total of credits of the month : ";
+		std::cin >> d;
+		std::cout << "Enter credit limit : ";
+		std::cin >> e;
+
+		Customer myCustomer = Customer(a, b, c, d, e);
+
+		std::cout << myCustomer.calculateNewBalance() << std::endl;
+	}
+
 	return 0;
 }
