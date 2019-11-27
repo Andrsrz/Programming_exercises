@@ -8,7 +8,6 @@
 // Avoid magic numbers
 const int FIVE = 5;
 const int TEN = 10;
-const int HUNDRED = 100;
 const int THOUSAND = 1000;
 const int TEN_THOUSAND = 10000;
 const int HUNDRED_THOUSAND = 100000;
@@ -48,13 +47,11 @@ bool isPalindrome(int number){
 	bool isPalindrome = false;
 	int firstDigit = 0;
 	int secondDigit = 0;
-	int thirdDigit = 0;
 	int fourthDigit = 0;
 	int fifthDigit = 0;
 
 	firstDigit = ( number / TEN_THOUSAND ) % TEN;
 	secondDigit = ( number / THOUSAND ) % TEN;
-	thirdDigit = ( number / HUNDRED ) % TEN;
 	fourthDigit = ( number / TEN ) % TEN;
 	fifthDigit = ( number / 1 ) % TEN;
 
