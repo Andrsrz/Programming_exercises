@@ -1,0 +1,17 @@
+4.28 Checkerboard Pattern of Asterisks.
+Write a program that displays the following checkerboard pattern. 
+Your program must use only three output statements, one of each 
+of the following
+forms:
+cout << "* ";
+cout << ' ';
+cout << endl;
+
+* * **** * *
+* * **** * *
+* * **** * *
+* * **** * *
+* * **** * *
+* * **** * *
+* * **** * *
+* * **** * *
