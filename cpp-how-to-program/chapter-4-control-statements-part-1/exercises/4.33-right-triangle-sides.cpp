@@ -12,8 +12,13 @@ int main(){
 	
 	// Check user input
 	while( ( a == 0 ) && ( b == 0 ) && ( c == 0 ) ){
-		std::cout << "Enter three nonzero values : ";
-		std::cin >> a >> b >> c;	
+		std::cout << "Enter three nonzero values." << std::endl;
+		std::cout << "a : ";
+		std::cin >> a;
+		std::cout << "b : ";
+		std::cin >> b;
+		std::cout << "c : ";
+		std::cin >> c;
 	}
 	
 	// Pythagoras' Theorem
