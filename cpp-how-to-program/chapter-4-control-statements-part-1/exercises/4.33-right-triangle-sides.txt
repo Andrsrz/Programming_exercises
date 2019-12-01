@@ -1,0 +1,3 @@
+4.33 Sides of a Right Triangle.
+Write a program that reads three nonzero integers and determines and 
+prints whether they’re the sides of a right triangle.
