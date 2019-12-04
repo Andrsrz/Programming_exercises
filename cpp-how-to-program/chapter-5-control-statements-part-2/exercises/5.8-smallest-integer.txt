@@ -1,0 +1,3 @@
+5.8 Find the Smallest Integer.
+Write a program that uses a for statement to find the smallest of several integers.
+Assume that the first value read specifies the number of values remaining.
