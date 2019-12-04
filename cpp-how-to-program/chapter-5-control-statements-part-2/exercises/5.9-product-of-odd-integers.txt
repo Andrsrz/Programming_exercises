@@ -1,0 +1,2 @@
+5.9 Product of Odd Integers.
+Write a program that uses a for statement to calculate and print the product of the odd integers from 1 to 15.
