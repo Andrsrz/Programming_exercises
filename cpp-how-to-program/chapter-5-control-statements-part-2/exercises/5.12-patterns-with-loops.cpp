@@ -13,8 +13,17 @@ const int TEN = 10;
 
 int main(){
 	// A
+	std::cout << "A :" << std::endl;
 	for(int i = 1; i <= TEN; i++){
 		for(int j = 0; j < i; j++){
+			std::cout << ASTERISK;
+		}
+		std::cout << NEW_LINE;
+	}
+	// B
+	std::cout << "B :" << std::endl;
+	for(int i = 1; i <= TEN; i++){
+		for(int j = TEN; j >= i; j--){
 			std::cout << ASTERISK;
 		}
 		std::cout << NEW_LINE;
