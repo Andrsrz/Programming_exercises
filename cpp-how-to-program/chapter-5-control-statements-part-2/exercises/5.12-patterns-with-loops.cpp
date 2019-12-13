@@ -24,8 +24,8 @@ int main(){
 	}
 	// B
 	std::cout << "B :" << std::endl;
-	for(int i = 1; i <= TEN; i++){
-		for(int j = TEN; j >= i; j--){
+	for(int row = 1; row <= TEN; row++){
+		for(int asterisks = TEN; asterisks >= row; asterisks--){
 			std::cout << ASTERISK;
 		}
 		std::cout << NEW_LINE;
