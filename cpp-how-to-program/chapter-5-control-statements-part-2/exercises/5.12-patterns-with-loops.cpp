@@ -16,8 +16,8 @@ const int TEN = 10;
 int main(){
 	// A
 	std::cout << "A :" << std::endl;
-	for(int i = 1; i <= TEN; i++){
-		for(int j = 0; j < i; j++){
+	for(int row = 1; row <= TEN; row++){
+		for(int asterisks = 0; asterisks < row; asterisks++){
 			std::cout << ASTERISK;
 		}
 		std::cout << NEW_LINE;
