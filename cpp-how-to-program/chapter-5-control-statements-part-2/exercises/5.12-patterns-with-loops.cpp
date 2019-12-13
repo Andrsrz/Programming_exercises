@@ -9,8 +9,6 @@ const char ASTERISK = '*';
 const char SPACE = ' ';
 const char NEW_LINE = '\n';
 // Avoid magic numbers
-const int TWO = 2;
-const int NINE = 9;
 const int TEN = 10;
 
 int main(){
@@ -33,7 +31,7 @@ int main(){
 	// C
 	std::cout << "C :" << std::endl;
 	for(int row = 1; row <= TEN; row++){
-		for(int spaces = TWO; spaces <= row; spaces++){
+		for(int spaces = 1; spaces < row; spaces++){
 			std::cout << SPACE;
 		}
 		for(int asterisks = TEN; asterisks >= row; asterisks--){
