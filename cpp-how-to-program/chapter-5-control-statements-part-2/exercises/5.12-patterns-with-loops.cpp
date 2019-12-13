@@ -7,10 +7,10 @@
 
 const char ASTERISK = '*';
 const char SPACE = ' ';
-const char RETURN = '\r';
 const char NEW_LINE = '\n';
 // Avoid magic numbers
 const int TWO = 2;
+const int NINE = 9;
 const int TEN = 10;
 
 int main(){
@@ -37,6 +37,17 @@ int main(){
 			std::cout << SPACE;
 		}
 		for(int asterisks = TEN; asterisks >= row; asterisks--){
+			std::cout << ASTERISK;
+		}
+		std::cout << NEW_LINE;
+	}
+	// D
+	std::cout << "D :" << std::endl;
+	for(int row = 1; row <= TEN; row++){
+		for(int spaces = TEN; spaces > row; spaces--){
+			std::cout << SPACE;
+		}
+		for(int asterisks = 0; asterisks < row; asterisks++){
 			std::cout << ASTERISK;
 		}
 		std::cout << NEW_LINE;
