@@ -8,6 +8,8 @@
 #include <vector>
 
 // Avoid magic numbers
+const int TWO = 2;
+const int THREE = 3;
 const int FOUR = 4;
 const int SEVEN = 7;
 const int TEN = 10;
@@ -25,7 +27,11 @@ int main(){
 
     if(checkNumberDigits(number)){
         std::vector<int> digits = getEveryDigit(number);
+        std::vector<int> encrypted = doEncryption(digits);
+        std::cout << "Original number : ";
         printVector(digits);
+        std::cout << "Encrypted number : ";
+        printVector(encrypted);
     }else{
         std::cout << "ERROR! Enter a valid four digit number." << std::endl;
         main(); // Recursive
@@ -63,13 +69,21 @@ std::vector<int> getEveryDigit(int number){
 }
 
 std::vector<int> doEncryption(std::vector<int> digits){
-    std::vector<int> encryptedDigits;
+    std::vector<int> encryptedNumber;
+    int first, second, third, fourth;
 
-    for(int i = 0; i < digits.size(); i++){
-       
-    }
+    // Encryption formula
+    first = ( digits[TWO] + SEVEN ) % TEN;
+    second = ( digits[THREE] + SEVEN ) % TEN;
+    third = ( digits[0] + SEVEN ) % TEN;
+    fourth = ( digits[1] + SEVEN ) % TEN;
 
-    return encryptedDigits;
+    encryptedNumber.push_back(first);
+    encryptedNumber.push_back(second);
+    encryptedNumber.push_back(third);
+    encryptedNumber.push_back(fourth);
+
+    return encryptedNumber;
 }
 
 void printVector(std::vector<int> arr){
