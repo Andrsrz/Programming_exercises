@@ -49,7 +49,7 @@ bool checkNumberDigits(int number){
         digits++;
     }
 
-    ( digits == 4 ) ? isValidNumber = true : isValidNumber = false;
+    ( digits == FOUR ) ? isValidNumber = true : isValidNumber = false;
 
     return isValidNumber;
 }
