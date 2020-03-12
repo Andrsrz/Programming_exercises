@@ -22,8 +22,13 @@ int main(int argc, char** argv){
 
     for(int i = 1; i < argc; i++){
         std::string str = argv[i];
-        product = (int)str[0] - ZERO;
-        quantity = (float)str[2] - ZERO;
+        std::string subStr = str.substr(2, str.size());
+        /*
+         * Enter arguments like this : product,quantity
+         * So str[0] is the product and str.substr(2, str.size()) is the quantity
+         */
+        product = (int)str[0] - ZERO; // Char to int
+        quantity = atoi(subStr.c_str()); // Convert string to int
 
         switch(product){
             case 1:
