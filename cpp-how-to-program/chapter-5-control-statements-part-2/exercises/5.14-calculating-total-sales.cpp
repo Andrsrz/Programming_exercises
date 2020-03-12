@@ -4,8 +4,10 @@
 */
 
 #include <iostream>
+#include <string>
 #include <vector>
 
+const char ZERO = '0';
 // Avoid magic numbers
 const float P1 = 2.98;
 const float P2 = 4.50;
@@ -13,44 +15,45 @@ const float P3 = 9.98;
 const float P4 = 4.49;
 const float P5 = 6.87;
 
-// Function declaration
-std::vector<float> fillVector(float, float, float, float, float);
-
 int main(int argc, char** argv){
-    std::vector<float> products = fillVector(P1, P2, P3, P4, P5);
+    float total = 0.0;
+    int product = 0;
+    float quantity = 0.0;
 
-    for(int i = 1; i < argc - 1; i++){
-        int product = 0;
+    for(int i = 1; i < argc; i++){
+        std::string str = argv[i];
+        product = (int)str[0] - ZERO;
+        quantity = (float)str[2] - ZERO;
+
         switch(product){
-            case 0:
-                break;
             case 1:
+                std::cout << "Product 1° : " << P1 * quantity << std::endl;
+                total += (P1 * quantity);
                 break;
             case 2:
+                std::cout << "Product 2° : " << P2 * quantity << std::endl;
+                total += (P2 * quantity);
                 break;
             case 3:
+                std::cout << "Product 3° : " << P3 * quantity << std::endl;
+                total += (P3 * quantity);
                 break;
             case 4:
+                std::cout << "Product 4° : " << P4 * quantity << std::endl;
+                total += (P4 * quantity);
+                break;
+            case 5:
+                std::cout << "Product 5° : " << P5 * quantity << std::endl;
+                total += (P5 * quantity);
                 break;
             default:
+                std::cout << "Enter valid arguments!." << std::endl;
                 break;
         }
+
     }
 
-    return 0;
-}
+    std::cout << "Total retail value : " << total << std::endl;
 
-// Function implementation
-std::vector<float> fillVector(float product1,
-                            float product2,
-                            float product3,
-                            float product4,
-                            float product5){
-    std::vector<float> products;
-    products.push_back(product1);
-    products.push_back(product2);
-    products.push_back(product3);
-    products.push_back(product4);
-    products.push_back(product5);
-    return products;
+    return 0;
 }
