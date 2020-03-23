@@ -1,0 +1,17 @@
+5.23 Diamond of Asterisks.
+
+Write a program that prints the following diamond shape.
+You may use output statements that print a single asterisk ( * ),
+a single blank or a single newline.
+Maximize your use of repetition (with nested for statements) and
+minimize the number of output statements.
+
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
