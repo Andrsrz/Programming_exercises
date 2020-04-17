@@ -1,0 +1,11 @@
+6.23 Square of Any Character.
+
+Modify the function created in Exercise 6.22 to form the square out of whatever
+character is contained in character parameter fillCharacter. Thus, if side is 5
+and fillCharacter is #, then this function should print the following:
+
+#####
+#####
+#####
+#####
+#####
