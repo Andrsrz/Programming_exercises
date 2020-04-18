@@ -9,3 +9,6 @@
 
 # Ignore buffer's cache
 *.*~
+
+# Ignore object files
+*.o
