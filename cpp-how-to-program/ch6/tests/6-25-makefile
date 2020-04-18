@@ -1,0 +1,18 @@
+CPP= g++
+STANDAR= -std=c++11
+I_CATCH_SINGLE_INCLUDE= -I/usr/include/catch2
+
+6-25: 6.25-test-convertHoursToSeconds.o 6.25-test-convertMinutesToSeconds.o 6.25-tests-main.o
+	$(CPP) $(STANDAR) -Wall $(I_CATCH_SINGLE_INCLUDE) -o 6-25 6.25-tests-main.o 6.25-test-convertMinutesToSeconds.o 6.25-test-convertHoursToSeconds.o
+
+6.25-test-convertHoursToSeconds.o: 6.25-test-convertHoursToSeconds.cpp
+	$(CPP) $(STANDAR) -Wall $(I_CATCH_SINGLE_INCLUDE) -c 6.25-test-convertHoursToSeconds.cpp
+
+6.25-test-convertMinutesToSeconds.o: 6.25-test-convertMinutesToSeconds.cpp
+	$(CPP) $(STANDAR) -Wall $(I_CATCH_SINGLE_INCLUDE) -c 6.25-test-convertMinutesToSeconds.cpp
+
+6.25-tests-main.o: 6.25-tests-main.cpp
+	$(CPP) $(STANDAR) -Wall $(I_CATCH_SINGLE_INCLUDE) -c 6.25-tests-main.cpp
+
+clean:
+	rm *.o 6-25
