@@ -1,0 +1,4 @@
+6.27 Find the Minimum.
+
+Write a program that inputs three double-precision, floating-point
+numbers and passes them to a function that returns the smallest number.
