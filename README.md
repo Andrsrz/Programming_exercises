@@ -1,10 +1,16 @@
 # Programming Exercises
 Programming Exercises is a repository for anyone wanting to improve
-their coding and problem solving skill. Every directory has a list
-of programming exercises from a variety of web pages and books.
-Focusing in the C++ programming language.
+their coding and problem solving skill.
+
+Every directory has a list of programming exercises from a variety of
+web pages and books. We're focusing in the C++ programming language.
 
 Every problem has a txt file that define the problem.
+
+## Where to start?
+If you are new to programming and C++ go directly to [C++ Begginers](https://github.com/Andrsrz/programming-exercises/tree/master/cpp-how-to-program)
+directory and follow in order. From there you can go to any other
+directory to improve your problem solving skill.
 
 ## What can you learn from this?
 1. Syntax
