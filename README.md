@@ -7,4 +7,4 @@ Every directory has a txt file that define the problem and another file
 in any programming language with my solution to it.
 
 ## License
-[GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[MIT](https://mit-license.org/)
