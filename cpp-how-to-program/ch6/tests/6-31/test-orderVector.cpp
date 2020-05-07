@@ -15,7 +15,7 @@ std::vector<int> orderVector(std::vector<int> vect){
 	return vect;
 }
 
-TEST_CASE("1: orderVector", "[multi-file:3]"){
+TEST_CASE("2: orderVector", "[multi-file:3]"){
 	REQUIRE_THAT(orderVector({ 5 }), Catch::Equals<int>({ 5 }));
 	REQUIRE_THAT(orderVector({ 2, 6, 1, 3 }), Catch::Equals<int>({ 1, 2, 3, 6 }));
 	REQUIRE_THAT(orderVector({ 100, 99, 98, 97 }), Catch::Equals<int>({ 97, 98, 99, 100 }));
