@@ -34,24 +34,30 @@ int getNumberOfDigits(int number){
 std::vector<int> reverseNumber(int number, int digits){
 	std::vector<int> numberDigits;
 	while(digits > 0){
-		digits--;
-		int digit = number / (powerNumber(::TEN, digits)) % ::TEN;
+		int digit = number / (powerNumber(::TEN, digits - 1)) % ::TEN;
 		numberDigits.push_back(digit);
+		digits--;
 	}
 	return numberDigits;
 }
 
 int powerNumber(int base, int exponent){
 	int power = 1;
+
+	if(exponent == 0){
+		return power;
+	}
+
 	for(int i = 0; i < exponent; i++){
 		power *= base;
 	}
+
 	return power;
 }
 
 void printReversedNumber(std::vector<int> digits){
 	std::string str = "";
-	for(int i = digits.size() - 1; i > 0; i--)
+	for(int i = digits.size() - 1; i >= 0; i--)
 		str += std::to_string(digits[i]);
 	std::cout << str << std::endl;
 }

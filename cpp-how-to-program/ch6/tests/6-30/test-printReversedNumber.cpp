@@ -9,8 +9,10 @@ std::vector<int> four {4,9,6};
 
 std::string printReversedNumber(std::vector<int> digits){
 	std::string str = "";
-	for(int i = digits.size() - 1; i > 0; i--)
+
+	for(int i = digits.size() - 1; i >= 0; i--)
 		str += std::to_string(digits[i]);
+
 	return str;
 }
 
