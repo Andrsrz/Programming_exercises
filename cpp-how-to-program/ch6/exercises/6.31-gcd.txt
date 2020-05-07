@@ -1,0 +1,5 @@
+6.31 Greatest Common Divisor.
+
+The greatest common divisor (GCD) of two integers is the largest integer
+that evenly divides each of the numbers. Write a function gcd that
+returns the greatest common divisor of two integers.
