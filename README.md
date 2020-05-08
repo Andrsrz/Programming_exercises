@@ -9,6 +9,8 @@ You can make this exercises in your preferred programming language, but
 we're focusing in the C++ programming language and developing in Linux.
 Every problem has a txt file that define the problem.
 
+You can join our [discord server](https://discord.gg/YtDMGT) for help.
+
 ## Requirements
 - Linux
   - If you are new to Linux I'd recommed install [Linux Mint](https://linuxmint.com/)
