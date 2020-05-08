@@ -14,6 +14,7 @@ Every problem has a txt file that define the problem.
   - If you are new to Linux I'd recommed install [Linux Mint](https://linuxmint.com/)
   - If you don't want to install another system on you PC you can go with
     [WSL](https://docs.microsoft.com/en-us/windows/wsl/about)
+
 Once you have Linux installed you need to have the following programs:
 - [git](https://git-scm.com/)
 - [make](https://linux.die.net/man/1/mak)
@@ -26,10 +27,8 @@ First you need to have the repository in your local machine:
 git clone https://github.com/Andrsrz/programming-exercises
 cd programming-exercises/
 ```
-If you are new to programming and C++ go to [cpp-course]() directory
-and follow in order, once you finish that you can proceed
-to [problem-solving]().
-If you know your way in C++ you can go directly to [problem-solving]().
+If you know your way in C++ you can go directly to [problem-solving](https://github.com/Andrsrz/programming-exercises/tree/master/problem-solving).
+If not then go to [cpp-course](https://github.com/Andrsrz/programming-exercises/tree/master/cpp-course) directory and follow in order.
 
 ## What can you learn from this?
 1. Syntax
