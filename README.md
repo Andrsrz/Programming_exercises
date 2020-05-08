@@ -3,14 +3,33 @@ Programming Exercises is a repository for anyone wanting to improve
 their coding and problem solving skill.
 
 Every directory has a list of programming exercises from a variety of
-web pages and books. We're focusing in the C++ programming language.
+web pages and books.
 
+You can make this exercises in your preferred programming language, but
+we're focusing in the C++ programming language and developing in Linux.
 Every problem has a txt file that define the problem.
 
+## Requirements
+- Linux
+  - If you are new to Linux I'd recommed install [Linux Mint](https://linuxmint.com/)
+  - If you don't want to install another system on you PC you can go with
+    [WSL](https://docs.microsoft.com/en-us/windows/wsl/about)
+Once you have Linux installed you need to have the following programs:
+- [git](https://git-scm.com/)
+- [make](https://linux.die.net/man/1/mak)
+- [g++](https://gcc.gnu.org/)
+- [gdb](https://www.gnu.org/software/gdb/)
+
 ## Where to start?
-If you are new to programming and C++ go directly to [C++ Begginers](https://github.com/Andrsrz/programming-exercises/tree/master/cpp-how-to-program)
-and follow in order. From there you can go to any other directory
-to improve your problem solving skill.
+First you need to have the repository in your local machine:
+``` sh
+git clone https://github.com/Andrsrz/programming-exercises
+cd programming-exercises/
+```
+If you are new to programming and C++ go to [cpp-course]() directory
+and follow in order, once you finish that you can proceed
+to [problem-solving]().
+If you know your way in C++ you can go directly to [problem-solving]().
 
 ## What can you learn from this?
 1. Syntax
@@ -22,6 +41,14 @@ to improve your problem solving skill.
    - [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
 6. Classes
 7. Templates
+8. Compiling
+   - [g++](https://gcc.gnu.org/)
+9. Debugging
+   - [gdb](https://www.gnu.org/software/gdb/)
+10. Makefiles
+   - [make](https://linux.die.net/man/1/make)
+11. Unit testing
+   - [Catch2](https://github.com/catchorg/Catch2)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first
