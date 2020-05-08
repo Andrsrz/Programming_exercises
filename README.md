@@ -31,6 +31,7 @@ If you know your way in C++ you can go directly to [problem-solving](https://git
 If not then go to [cpp-course](https://github.com/Andrsrz/programming-exercises/tree/master/cpp-course) directory and follow in order.
 
 ## What can you learn from this?
+C++
 1. Syntax
 2. Data types
 3. Loops
@@ -40,13 +41,15 @@ If not then go to [cpp-course](https://github.com/Andrsrz/programming-exercises/
    - [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
 6. Classes
 7. Templates
-8. Compiling
+
+Tools
+- Compiling
    - [g++](https://gcc.gnu.org/)
-9. Debugging
+- Debugging
    - [gdb](https://www.gnu.org/software/gdb/)
-10. Makefiles
-   - [make](https://linux.die.net/man/1/make)
-11. Unit testing
+- Makefiles
+    - [make](https://linux.die.net/man/1/make)
+- Unit testing
    - [Catch2](https://github.com/catchorg/Catch2)
 
 ## Contributing
