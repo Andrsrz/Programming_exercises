@@ -1,0 +1,4 @@
+6.36 Recursive Exponentiation.
+
+Write a recursive function power( base, exponent ) that, when invoked,
+returns base^exponent.
